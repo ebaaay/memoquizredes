@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { type: 'fill', question: 'El cable par trenzado apantallado, o _______, ofrece mayor protección contra interferencias a un costo más elevado.', answer: 'STP' },
 
         // --- 3. Clasificaciones y Datos Clave de Cableado (Pág. 1) ---
-        { type: 'mcq', question: 'En la clasificación de cables, ¿cuál de ellas (de 2 a 7) especifica las características eléctricas como atenuación e impedancia?', options: ['Las Clases', 'Las Series', 'Las Categorías', 'Los Niveles'], answer: 'Categorías' },
+        { type: 'mcq', question: 'En la clasificación de cables, ¿cuál de ellas (de 2 a 7) especifica las características eléctricas como atenuación e impedancia?', options: ['Las Clases', 'Las Series', 'Las Categorías', 'Los Niveles'], answer: 'Las Categorías' },
         { type: 'fill', question: 'Las _______ de un cable (2, 5e, 6, 7) determinan sus características eléctricas y rendimiento.', answer: 'Categorías' },
         { type: 'mcq', question: '¿Qué clasificación de cables (de A a F) se enfoca en definir las distancias permitidas, el ancho de banda y sus aplicaciones?', options: ['Las Normas', 'Las Clases', 'Las Secciones', 'Las Partidas'], answer: 'Las Clases' },
         { type: 'fill', question: 'Las _______ de un cable (A, B, C...) especifican el ancho de banda y las distancias máximas que puede cubrir.', answer: 'Clases' },
