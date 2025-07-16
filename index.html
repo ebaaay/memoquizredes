@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Redes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Pantalla del Menú Principal -->
+        <section id="menu-screen" class="screen active">
+            <div class="card">
+                <h1>Cuestionario de Redes</h1>
+                <p>Elige un modo de juego para comenzar.</p>
+                <button id="start-mcq-btn" class="btn btn-primary">Opción Múltiple</button>
+                <button id="start-fill-btn" class="btn btn-primary">Rellenar el Espacio</button>
+            </div>
+        </section>
+
+        <!-- Pantalla de Selección de Sub-modo (Rellenar) -->
+        <section id="fill-mode-selection-screen" class="screen">
+            <div class="card">
+                <h2>Modo: Rellenar el Espacio</h2>
+                <p>¿Cómo quieres jugar?</p>
+                <button id="start-fill-options-btn" class="btn btn-primary">Con Opciones</button>
+                <button id="start-fill-writing-btn" class="btn btn-primary">Modo Escritura</button>
+                <button id="back-to-menu-from-fill" class="btn btn-secondary">Volver al Menú</button>
+            </div>
+        </section>
+
+        <!-- Pantalla de Juego -->
+        <section id="game-screen" class="screen">
+            <div class="game-header">
+                <span id="question-counter">Pregunta 1/10</span>
+                <span id="score-counter">Puntuación: 0</span>
+            </div>
+            <div id="game-card" class="card">
+                <p id="question-text">Aquí va la pregunta del cuestionario.</p>
+                <!-- Área de interacción se generará dinámicamente con JS -->
+                <div id="interaction-area"></div>
+            </div>
+            <div class="game-footer">
+                <button id="next-question-btn" class="btn btn-primary hidden">Siguiente</button>
+                <button id="skip-question-btn" class="btn btn-secondary hidden">Saltar</button>
+            </div>
+        </section>
+
+        <!-- Pantalla de Resultados -->
+        <section id="results-screen" class="screen">
+            <div class="card">
+                <h2>¡Cuestionario Completado!</h2>
+                <p id="final-score">Tu puntuación: 8/10 correctas.</p>
+                <div id="review-section" class="hidden">
+                    <h3>Repaso de incorrectas:</h3>
+                    <ul id="incorrect-answers-list"></ul>
+                </div>
+                <div class="result-actions">
+                    <button id="review-incorrect-btn" class="btn btn-primary hidden">Repasar Incorrectas</button>
+                    <button id="back-to-menu-btn" class="btn btn-secondary">Volver al Menú</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
