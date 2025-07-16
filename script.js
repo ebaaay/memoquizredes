@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- 3. Clasificaciones y Datos Clave de Cableado (Pág. 1) ---
         { type: 'mcq', question: 'En la clasificación de cables, ¿cuál de ellas (de 2 a 7) especifica las características eléctricas como atenuación e impedancia?', options: ['Las Clases', 'Las Series', 'Las Categorías', 'Los Niveles'], answer: 'Categorías' },
         { type: 'fill', question: 'Las _______ de un cable (2, 5e, 6, 7) determinan sus características eléctricas y rendimiento.', answer: 'Categorías' },
-        { type: 'mcq', question: '¿Qué clasificación de cables (de A a F) se enfoca en definir las distancias permitidas, el ancho de banda y sus aplicaciones?', options: ['Las Normas', 'Las Clases', 'Las Secciones', 'Las Partidas'], answer: 'Clases' },
+        { type: 'mcq', question: '¿Qué clasificación de cables (de A a F) se enfoca en definir las distancias permitidas, el ancho de banda y sus aplicaciones?', options: ['Las Normas', 'Las Clases', 'Las Secciones', 'Las Partidas'], answer: 'Las Clases' },
         { type: 'fill', question: 'Las _______ de un cable (A, B, C...) especifican el ancho de banda y las distancias máximas que puede cubrir.', answer: 'Clases' },
         { type: 'mcq', question: 'Según el texto, un porcentaje muy alto de los fallos en una red se deben a defectos en...', options: ['el software', 'el hardware del servidor', 'la configuración de los routers', 'el cableado'], answer: 'el cableado' },
         { type: 'fill', question: 'Es crucial no escatimar en la inversión de cables, ya que el 70% de los fallos de una red provienen del _______.', answer: 'cableado' },
